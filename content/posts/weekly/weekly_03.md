@@ -1,9 +1,7 @@
 ---
 title: "Weekly_03"
-date: 2022-02-22T15:08:04+08:00
+date: 2022-02-22T15:15:04+08:00
 draft: false
-categories:
-- weekly
 tags:
 - weekly
 summary: 2022/02/13 ~ 2022/02/19
