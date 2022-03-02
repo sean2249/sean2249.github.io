@@ -4,11 +4,49 @@ date: 2022-03-02T19:24:34+08:00
 draft: false
 tags:
 - weekly
-summary: 2022/02/20 ~ 2022/02/26; 
+summary: 2022/02/20 ~ 2022/02/26; 只 git add 部份的 file changed/軟體工程師的閱讀書單/kubernetes 的元件簡易介紹/Reverse emoji in python is not what u think
 ---
 
+這周把電腦的所有 tab 清空!!!! 
 
-i這周把電腦的所有 tab 清空!!!! 
+- [Link](#link)
+  - [Good](#good)
+    - [[git] Commit only part of a file in git](#git-commit-only-part-of-a-file-in-git)
+    - [[python] Which string formatting method should you use](#python-which-string-formatting-method-should-you-use)
+      - [1. 使用 %](#1-使用-)
+      - [2. 使用 format](#2-使用-format)
+      - [3. 使用 f-string](#3-使用-f-string)
+      - [4. 使用 Template (極少見)](#4-使用-template-極少見)
+    - [[FastAPI] 官方提供的 fastapi 專案架構](#fastapi-官方提供的-fastapi-專案架構)
+    - [[Software] Software Engineer roadmap via books](#software-software-engineer-roadmap-via-books)
+      - [1. 心法](#1-心法)
+      - [2. 基礎](#2-基礎)
+      - [3. 進階](#3-進階)
+      - [4. 反覆閱讀](#4-反覆閱讀)
+    - [[Pytest] Useful pytest command line options](#pytest-useful-pytest-command-line-options)
+    - [[python-class] Provide Multiple Constructors in Your Python Classes](#python-class-provide-multiple-constructors-in-your-python-classes)
+    - [[Kubernetes] A guide to Kubernetes architecture](#kubernetes-a-guide-to-kubernetes-architecture)
+    - [[Python-string-encode] Why Can’t You Reverse a String With a Flag Emoji?](#python-string-encode-why-cant-you-reverse-a-string-with-a-flag-emoji)
+  - [Others](#others)
+    - [[python] What does '# noqa' mean in Python comments](#python-what-does--noqa-mean-in-python-comments)
+    - [[mock] Mocking a class used in a with statement](#mock-mocking-a-class-used-in-a-with-statement)
+    - [[python] psycopg2 where in statement parameters](#python-psycopg2-where-in-statement-parameters)
+    - [[kubernetes] 第一千零一篇的 cgroups 介紹](#kubernetes-第一千零一篇的-cgroups-介紹)
+    - [[FastAPI] events: startup - shutdown](#fastapi-events-startup---shutdown)
+    - [[FastAPI] Request body + path + query parameters](#fastapi-request-body--path--query-parameters)
+    - [[FastAPI] `Body` with multiple `examples`](#fastapi-body-with-multiple-examples)
+    - [[FastAPI] middleware](#fastapi-middleware)
+    - [[DesignPattern] Wiki 上面的 design pattern](#designpattern-wiki-上面的-design-pattern)
+    - [[SystemStructure] UML](#systemstructure-uml)
+    - [[psycopg2] Sqlstate exception classes](#psycopg2-sqlstate-exception-classes)
+- [Notes](#notes)
+  - [Regular expression 取出](#regular-expression-取出)
+  - [[Mock] setting return values and attributes](#mock-setting-return-values-and-attributes)
+    - [set function return value](#set-function-return-value)
+    - [Set module return value](#set-module-return-value)
+    - [set attribute value](#set-attribute-value)
+    - [use class instance](#use-class-instance)
+  - [[FastAPI] Additional responses in OpenAPI](#fastapi-additional-responses-in-openapi)
 
 # Link
 ## Good
@@ -293,7 +331,7 @@ https://davidamos.dev/why-cant-you-reverse-a-flag-emoji/
 
 接下來我們嘗試用 encode 的方式得到原生的 unicode，來避掉可能是不同編碼方式的錯誤 (ascii, utf-8, big5)
 
-```python=
+```python
 >>> list("🇺🇸".encode())
 [240, 159, 135, 186, 240, 159, 135, 184]
 >>> # ^^^^^^^^^^^^^^---Code point for 🇺
@@ -304,7 +342,8 @@ https://davidamos.dev/why-cant-you-reverse-a-flag-emoji/
 [240, 159, 135, 184, 240, 159, 135, 186]
 >>> # ^^^^^^^^^^^^^^---Code point for 🇸
 >>> #                ^^^^^^^^^^^^^^^^^^---Code point for 🇺
-````
+```
+
 成功的 encode 了，發現 us flag 總共分出了八個字元，四個為一組，才組成了 :us:。而在 reverse 中，是以一組為單位做 reverse，因此才導致 us -> su，而此 su 沒有辦法解析成 emoji 的格式，所以才跑出原生的兩個字
 
 同理與中文字相同，中文的每個字也是多個字元為一組，但因為沒有像 emoji 一樣另外再轉一層查詢做圖片，所以才沒遇問題。
@@ -317,7 +356,6 @@ https://davidamos.dev/why-cant-you-reverse-a-flag-emoji/
 內文還有講到更多 bits 的
 
 
----
 ## Others
 
 ### [python] What does '# noqa' mean in Python comments 
