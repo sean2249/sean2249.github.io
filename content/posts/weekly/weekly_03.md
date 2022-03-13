@@ -1,10 +1,10 @@
 ---
-title: "leekly 03"
+title: "weekly 03"
 date: 2022-02-22T15:15:04+08:00
 draft: false
-tags:
-- weekly
 categories:
+- weekly
+tags:
 - pytest
 - testing
 - python 
