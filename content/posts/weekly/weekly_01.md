@@ -6,28 +6,35 @@ summary: 2022/01/24 ~ 2022/01/30
 categories:
 - weekly
 tags:
-- weekly
+- python
+- sre
+- system structure 
+- development
+- python module
+- docker
+- moby
+- web3
 ---
 
 - [website reading](#website-reading)
   - [推薦](#推薦)
-    - [Strict python function parameters](#strict-python-function-parameters)
-    - [沒技術系列 — 如何成為一個好的 SRE 工具人](#沒技術系列--如何成為一個好的-sre-工具人)
-    - [How to scale your web and mobile applications](#how-to-scale-your-web-and-mobile-applications)
-    - [Microservices database management patterns and principles](#microservices-database-management-patterns-and-principles)
+    - [[python] Strict python function parameters](#python-strict-python-function-parameters)
+    - [[sre] 沒技術系列 — 如何成為一個好的 SRE 工具人](#sre-沒技術系列--如何成為一個好的-sre-工具人)
+    - [[system structure] How to scale your web and mobile applications](#system-structure-how-to-scale-your-web-and-mobile-applications)
+    - [[system structure] Microservices database management patterns and principles](#system-structure-microservices-database-management-patterns-and-principles)
   - [Others](#others)
-    - [隕石開發](#隕石開發)
-    - [python 套件: pipdeptree](#python-套件-pipdeptree)
-    - [python 套件: billiard](#python-套件-billiard)
-    - [Guiding Design principles](#guiding-design-principles)
-    - [Goodbye docker desktop, hello minikube!](#goodbye-docker-desktop-hello-minikube)
-    - [【從Docker到Moby】Docker如何將容器平臺變成一門好生意？](#從docker到mobydocker如何將容器平臺變成一門好生意)
-    - [MoBy开源项目集](#moby开源项目集)
-    - [The False Promise of Web3](#the-false-promise-of-web3)
+    - [[development] 隕石開發](#development-隕石開發)
+    - [[python module] python 套件: pipdeptree](#python-module-python-套件-pipdeptree)
+    - [[python module] python 套件: billiard](#python-module-python-套件-billiard)
+    - [[python] Guiding Design principles](#python-guiding-design-principles)
+    - [[docker, minikube] Goodbye docker desktop, hello minikube!](#docker-minikube-goodbye-docker-desktop-hello-minikube)
+    - [[docker, moby]【從Docker到Moby】Docker如何將容器平臺變成一門好生意？](#docker-moby從docker到mobydocker如何將容器平臺變成一門好生意)
+    - [[moby] MoBy开源项目集](#moby-moby开源项目集)
+    - [[web3] The False Promise of Web3](#web3-the-false-promise-of-web3)
 
 # website reading
 ## 推薦
-### Strict python function parameters
+### [python] Strict python function parameters
 https://sethmlarson.dev/blog/strict-python-function-parameters
 
 強制性的 function parameters 輸入，之前只有 keyword-arguemnt 的強制，但在 python3.8 後，引入了 positional-argument 的強制 `def process_data(data, /, *, encoding='utf-8')` 裡面的 `/` 代表之前的 argument 都必須用 positional 的方式塞入，並且還要符合順序．當然還是可以用 keyword-argument 混用
@@ -45,7 +52,7 @@ def process_data(data1, data2, /, data3, *, data4=4)
 # no: process_data(1, 2, 3, 4)
 ```
 
-### 沒技術系列 — 如何成為一個好的 SRE 工具人
+### [sre] 沒技術系列 — 如何成為一個好的 SRE 工具人
 https://medium.com/starbugs/%E6%B2%92%E6%8A%80%E8%A1%93%E7%B3%BB%E5%88%97-%E5%A6%82%E4%BD%95%E6%88%90%E7%82%BA%E4%B8%80%E5%80%8B%E5%A5%BD%E7%9A%84-sre-%E5%B7%A5%E5%85%B7%E4%BA%BA-1d4d20fcadb
 
 - 要不要使用 open source 做為系統而衍生的問題，像是 open source 的社群是否活躍使得未來有 bug 能否快被快速修復
@@ -53,7 +60,7 @@ https://medium.com/starbugs/%E6%B2%92%E6%8A%80%E8%A1%93%E7%B3%BB%E5%88%97-%E5%A6
     - Community is good?
     - Paid 
 
-### How to scale your web and mobile applications
+### [system structure] How to scale your web and mobile applications
 https://enlear.academy/how-to-scale-your-web-and-mobile-applications-5be74bf99226
 
 - 從最簡單的 web app，因應服務人數的升級及 SLA 的要求，不斷的調整架構
@@ -76,7 +83,7 @@ https://enlear.academy/how-to-scale-your-web-and-mobile-applications-5be74bf9922
 4. we scaled out DB, turning it into a distributed database system
 5. we improved the responsiveness of our application using a queuing system
 
-### Microservices database management patterns and principles
+### [system structure] Microservices database management patterns and principles
 https://medium.com/design-microservices-architecture-with-patterns/microservices-database-management-patterns-and-principles-9121e25619f1
 
 - Shifting to the monolithic architecture to microservices architecture
@@ -104,22 +111,23 @@ https://medium.com/design-microservices-architecture-with-patterns/microservices
         - Might block microservices due to single-point-of-failure
 
 ## Others
-### 隕石開發
+### [development] 隕石開發
 https://ithelp.ithome.com.tw/articles/10198394
 
 隕石開發，神說什麼就是什麼，神說的就是準則，就是要達到
 
-### python 套件: pipdeptree
+### [python module] python 套件: pipdeptree
 https://github.com/naiquevin/pipdeptree
 
 整理 pip list，將相關的 dependency 縮減，優化 requirements.txt 的閱讀。當然還是推薦用 poetry
 
-### python 套件: billiard
+### [python module] python 套件: billiard
 https://github.com/celery/billiard
 
 若要在 python 上面進行多核心加速，需使用多進程才有辦法做到，常用的一個工具是 multiprocessing 套件，但 multiprocessing 目前在 airflow 上面會有相容性的問題，且 multiprocessing 沒有提供 callback function，供開發者指定一個 process 要停止前可以做的事情 (e.g., 關閉 db connection)。根據 stackoverflow 上面的建議就是使用一個multiprocessing 的延伸工具 - billiard。
 
-### Guiding Design principles
+### [python] Guiding Design principles
+
 https://nsls-ii.github.io/scientific-python-cookiecutter/guiding-design-principles.html
 - Refactor 是必要的，準備好 Version Control, testing, lint 作為重構的安全網
 - io 隔離
@@ -131,19 +139,19 @@ https://nsls-ii.github.io/scientific-python-cookiecutter/guiding-design-principl
     `func(123, False, False)` -> `func(123, cut=False, copy=False)`
 - write for readability
 
-### Goodbye docker desktop, hello minikube!
+### [docker, minikube] Goodbye docker desktop, hello minikube!
 https://itnext.io/goodbye-docker-desktop-hello-minikube-3649f2a1c469
 
 hyperkit for macos: toolkit for embedding hypervisor capabilities in your application.
 
 macos 不使用 docker 做為基底，改用 hyperkit 來減輕負擔，以使用 minikube
 
-### 【從Docker到Moby】Docker如何將容器平臺變成一門好生意？
+### [docker, moby]【從Docker到Moby】Docker如何將容器平臺變成一門好生意？
 https://www.ithome.com.tw/news/113899
 
 docker -> moby open source project 
 
-### MoBy开源项目集
+### [moby] MoBy开源项目集
 https://cloud-atlas.readthedocs.io/zh_CN/latest/docker/moby/introduce_moby.html
 
 - core of docker.
@@ -154,7 +162,7 @@ https://cloud-atlas.readthedocs.io/zh_CN/latest/docker/moby/introduce_moby.html
 - 容器爱好者可以实验最新的容器技术
 - 开源开发这可以在不同平台查看和测试自己的项目
 
-### The False Promise of Web3
+### [web3] The False Promise of Web3
 https://marker.medium.com/the-false-promise-of-web3-7e6c1a00d4be
 
 - web3 is a decentralized version of the internet where platforms and apps are built and owned by users.
