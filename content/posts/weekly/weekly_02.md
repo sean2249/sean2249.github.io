@@ -1,45 +1,60 @@
 ---
-title: "Weekly_02"
+title: "weekly 02"
 date: 2022-02-22T15:12:07+08:00
 draft: false
-tags:
-- weekly
 categories:
 - weekly
+tags:
+- system design
+- testing
+- python
+- developer enviroment  
+- network
+- backend
+- frontend
+- open source
+- kubernetes
+- docker
+- openshift
+- python module
+- linux
+- shell
+- sre
+- podman
 summary: 2022/01/30 ~ 2022/02/12。 街口 api 的測試 / github 開源專案參與
 ---
 
 - [Website](#website)
   - [Good](#good)
-    - [街口支付 API 自動化測試解決方案](#街口支付-api-自動化測試解決方案)
+    - [[system design,testing] 街口支付 API 自動化測試解決方案](#system-designtesting-街口支付-api-自動化測試解決方案)
       - [自動化測試程式架構的元件](#自動化測試程式架構的元件)
       - [一些](#一些)
       - [API](#api)
-    - [Timeit with the small bits](#timeit-with-the-small-bits)
-    - [Why you shuld use a developer font](#why-you-shuld-use-a-developer-font)
-    - [Factory method python](#factory-method-python)
-    - [What happens when you type in a url in an address bar in a brow](#what-happens-when-you-type-in-a-url-in-an-address-bar-in-a-brow)
-    - [別猶豫了，今天就上 Github 參與開源專案吧！](#別猶豫了今天就上-github-參與開源專案吧)
-    - [Kubernetes jobs market trends for 2021](#kubernetes-jobs-market-trends-for-2021)
+    - [[python] Timeit with the small bits](#python-timeit-with-the-small-bits)
+    - [[developer enviroment] Why you shuld use a developer font](#developer-enviroment-why-you-shuld-use-a-developer-font)
+    - [[python,design pattern] Factory method python](#pythondesign-pattern-factory-method-python)
+    - [[network,backend,frontend] What happens when you type in a url in an address bar in a brow](#networkbackendfrontend-what-happens-when-you-type-in-a-url-in-an-address-bar-in-a-brow)
+    - [[open source] 別猶豫了，今天就上 Github 參與開源專案吧！](#open-source-別猶豫了今天就上-github-參與開源專案吧)
+    - [[kubernetes] Kubernetes jobs market trends for 2021](#kubernetes-kubernetes-jobs-market-trends-for-2021)
       - [General](#general)
       - [Skill Tool](#skill-tool)
-    - [『紅帽』的 Cloud-Native 工作術: 從 Container 到 OpenShift](#紅帽的-cloud-native-工作術-從-container-到-openshift)
+    - [[docker,openshift] 『紅帽』的 Cloud-Native 工作術: 從 Container 到 OpenShift](#dockeropenshift-紅帽的-cloud-native-工作術-從-container-到-openshift)
   - [Others](#others)
-    - [Allure test report](#allure-test-report)
-    - [Reclaiming the lost art of Linux server administration](#reclaiming-the-lost-art-of-linux-server-administration)
+    - [[python module,testing] Allure test report](#python-moduletesting-allure-test-report)
+    - [[linux,network,shell] Reclaiming the lost art of Linux server administration](#linuxnetworkshell-reclaiming-the-lost-art-of-linux-server-administration)
       - [前言](#前言)
       - [好處](#好處)
       - [Shell script](#shell-script)
       - [Learning path](#learning-path)
-    - [Bash 程式設計教學與範例：Heredoc << 與 <<< 的用法](#bash-程式設計教學與範例heredoc--與--的用法)
-    - [How to make money with css](#how-to-make-money-with-css)
-    - [Making pixel-art with pure css](#making-pixel-art-with-pure-css)
-    - [Retrospective and Technical Details on the recent Firefox Outage](#retrospective-and-technical-details-on-the-recent-firefox-outage)
+    - [[linux,shell] Bash 程式設計教學與範例：Heredoc << 與 <<< 的用法](#linuxshell-bash-程式設計教學與範例heredoc--與--的用法)
+    - [[frontend] How to make money with css](#frontend-how-to-make-money-with-css)
+    - [[frontend] Making pixel-art with pure css](#frontend-making-pixel-art-with-pure-css)
+    - [[sre] Retrospective and Technical Details on the recent Firefox Outage](#sre-retrospective-and-technical-details-on-the-recent-firefox-outage)
       - [架構](#架構)
       - [結論](#結論)
-    - [How to Contribute to Open Source Projects – A Beginner's Guide](#how-to-contribute-to-open-source-projects--a-beginners-guide)
-    - [Podman 淺談 - 為何你應該選擇 Podman 而不是 Docker？](#podman-淺談---為何你應該選擇-podman-而不是-docker)
-    - ['is' vs '=='](#is-vs-)
+    - [[open source] How to Contribute to Open Source Projects – A Beginner's Guide](#open-source-how-to-contribute-to-open-source-projects--a-beginners-guide)
+    - [[docker,podman] Podman 淺談 - 為何你應該選擇 Podman 而不是 Docker？](#dockerpodman-podman-淺談---為何你應該選擇-podman-而不是-docker)
+    - [[python] 'is' vs '=='](#python-is-vs-)
 - [Notes](#notes)
   - [Postgres](#postgres)
   - [HyperText Transfer Protocol (HTTP)](#hypertext-transfer-protocol-http)
@@ -55,7 +70,7 @@ summary: 2022/01/30 ~ 2022/02/12。 街口 api 的測試 / github 開源專案�
 
 # Website
 ## Good 
-### 街口支付 API 自動化測試解決方案
+### [system design,testing] 街口支付 API 自動化測試解決方案
 https://medium.com/@dopizz/%E8%A1%97%E5%8F%A3%E6%94%AF%E4%BB%98-api-%E8%87%AA%E5%8B%95%E5%8C%96%E6%B8%AC%E8%A9%A6%E8%A7%A3%E6%B1%BA%E6%96%B9%E6%A1%88-ecf9ec0d0209
 
 > “Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization’s communication structure.”
@@ -114,7 +129,7 @@ https://medium.com/@dopizz/%E8%A1%97%E5%8F%A3%E6%94%AF%E4%BB%98-api-%E8%87%AA%E5
 
 `constants.py` 則定義了 service 會用到的 enum/map/dataclass 
 
-### Timeit with the small bits
+### [python] Timeit with the small bits
 ```python=
 '"-".join(str(n) for n in range(100))
 ```
@@ -130,7 +145,7 @@ o.29963
 ```
 0.245814
 
-### Why you shuld use a developer font
+### [developer enviroment] Why you shuld use a developer font
 https://dev.to/anthonyjdella/why-you-should-use-a-developer-font-2gio
 
 說明了使用程式開發者的字體的好處
@@ -140,7 +155,7 @@ https://dev.to/anthonyjdella/why-you-should-use-a-developer-font-2gio
 
 該篇作者推: Jetbrains Mono
 
-### Factory method python
+### [python,design pattern] Factory method python
 https://realpython.com/factory-method-python/
 
 利用工廠模式來抽離實作的複雜度，讓輸出輸入保持統一的格式，中間的工廠可隨意搭配
@@ -230,7 +245,7 @@ factory.register_builder('PANDORA', PandoraServiceBuilder())
 factory.register_builder('LOCAL', create_local_music_service)
 ```
 
-### What happens when you type in a url in an address bar in a brow
+### [network,backend,frontend] What happens when you type in a url in an address bar in a brow
 ![flowchart](https://i.imgur.com/Yka8dy7.jpg)
 https://www.facebook.com/will.fans/posts/5477204855641947
 
@@ -239,12 +254,12 @@ https://www.facebook.com/will.fans/posts/5477204855641947
 (不過加入了 k8s，感覺就是個更複雜的世界惹)
 
 
-### 別猶豫了，今天就上 Github 參與開源專案吧！
+### [open source] 別猶豫了，今天就上 Github 參與開源專案吧！
 https://medium.com/starbugs/start-contributing-to-open-source-projects-today-5daa4dda2b3e
 
 最近新來一個同事，之前碩班常在開源專案打滾，聽了他的介紹，也掀起一個想加入的想法 d(･∀･)b
 
-### Kubernetes jobs market trends for 2021
+### [kubernetes] Kubernetes jobs market trends for 2021
 https://kube.careers/report-2021-q4
 
 > from "StarBugs Weekly"
@@ -275,19 +290,19 @@ https://kube.careers/report-2021-q4
 - CI/CD: Jenkins.
 
 
-### 『紅帽』的 Cloud-Native 工作術: 從 Container 到 OpenShift
+### [docker,openshift] 『紅帽』的 Cloud-Native 工作術: 從 Container 到 OpenShift
 https://ithelp.ithome.com.tw/users/20130321/ironman/3566
 
 講得蠻廣的，蠻適合對 docker/k8s 想多點了解的人，重點是搭配上 openshift 的平台納入，可更好的帶入企業上的使用
 
 ## Others
-### Allure test report
+### [python module,testing] Allure test report
 http://blog.autoruby.com/2018/05/allure-test-report.html
 Allure Framework is a flexible lightweight multi-language test report tool that not only shows a very concise representation of what have been tested in a neat web report form, but allows everyone participating in the development process to extract maximum of useful information from everyday execution of tests.
 
 
 
-### Reclaiming the lost art of Linux server administration
+### [linux,network,shell] Reclaiming the lost art of Linux server administration
 https://www.pietrorea.com/2022/01/28/reclaiming-the-lost-art-of-linux-server-administration
 
 #### 前言
@@ -312,7 +327,7 @@ https://www.pietrorea.com/2022/01/28/reclaiming-the-lost-art-of-linux-server-adm
 2. Python/swift/ruby/javascript
 3. MySQL - database
 
-### Bash 程式設計教學與範例：Heredoc << 與 <<< 的用法 
+### [linux,shell] Bash 程式設計教學與範例：Heredoc << 與 <<< 的用法 
 https://officeguide.cc/bash-tutorial-here-document-string/
 
 Here document command 的使用，可以將多行資料寫入指令的參數
@@ -325,7 +340,7 @@ line3
 EOF
 ```
 
-### How to make money with css
+### [frontend] How to make money with css
 https://nazanin-ashrafi.hashnode.dev/how-to-make-money-with-css
 
 其實可以適用在蠻多地方的啦，像是寫文章寫書做影片，反正就是分享你所知道而別人不知的。
@@ -340,14 +355,14 @@ https://nazanin-ashrafi.hashnode.dev/how-to-make-money-with-css
     1. Doing art commissions
     1. NFTs
     
-### Making pixel-art with pure css
+### [frontend] Making pixel-art with pure css
 https://pokecoder.hashnode.dev/making-pixel-art-with-pure-css
 
 運用 `box-shadow` 來創作出 pixel-art，再搭配上 `keyframes` 來做顏色的轉變，真有趣！
 
 不過就如文章所提到的，圖像是一個點一個點的刻劃，真滴麻煩
 
-### Retrospective and Technical Details on the recent Firefox Outage
+### [sre] Retrospective and Technical Details on the recent Firefox Outage
 https://hacks.mozilla.org/2022/02/retrospective-and-technical-details-on-the-recent-firefox-outage/
 
 大概就是講 GCP 偷偷升級衝康到 firefox，使得 load balancer 被改成 http/3 載入，其中影響特別是以 Rust service 為主，因為他是用 http/3 來架構，而其中的 header 屬於 case-sensitive，跟 http/1, http/2 的 case-insensitive 不一樣，導到 firefox 前置的 load balancer 無法正常的將系統導流
@@ -363,13 +378,13 @@ https://hacks.mozilla.org/2022/02/retrospective-and-technical-details-on-the-rec
 - 我們 load balancers 的設定是 Automatic (default)，這導致第三方服務平台升級，改變其 default 導致掛點，因此之後會選擇更明確的設定
 - 雖然我們無法測試所有元件的組合，但 http 版未的升級會是非常大的議題，未來會更多加著手研究
 
-### How to Contribute to Open Source Projects – A Beginner's Guide
+### [open source] How to Contribute to Open Source Projects – A Beginner's Guide
 https://www.freecodecamp.org/news/how-to-contribute-to-open-source-projects-beginners-guide/
 
 寫超多，從如何挑選，到你可以做什麼貢獻，到最後的 community/pr 的介紹。根本是 open source contributor 的完整指南
 
 
-### Podman 淺談 - 為何你應該選擇 Podman 而不是 Docker？
+### [docker,podman] Podman 淺談 - 為何你應該選擇 Podman 而不是 Docker？
 https://ithelp.ithome.com.tw/articles/10238749
 
 2020 年的文章了，不過跟這週的另一篇在講 kubernetes，主要還是提到 docker。
@@ -378,7 +393,7 @@ https://ithelp.ithome.com.tw/articles/10238749
 
 看這篇來說，大概理解 docker 的架構使其有安全性/SLA 的問題
 
-### 'is' vs '=='
+### [python] 'is' vs '=='
 
 ```python=
 # "is" vs "=="
