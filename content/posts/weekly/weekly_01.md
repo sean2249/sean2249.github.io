@@ -1,10 +1,12 @@
 ---
-tags:
-- weekly
 title: "Weekly_01"
 date: 2022-02-05T15:34:29+08:00
 draft: false
 summary: 2022/01/24 ~ 2022/01/30
+categories:
+- weekly
+tags:
+- weekly
 ---
 
 - [website reading](#website-reading)

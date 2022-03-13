@@ -4,6 +4,8 @@ date: 2022-02-22T15:15:04+08:00
 draft: false
 tags:
 - weekly
+categories:
+- weekly
 summary: 2022/02/13 ~ 2022/02/19
 ---
 - [Link](#link)

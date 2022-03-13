@@ -4,6 +4,8 @@ date: 2022-03-02T19:24:34+08:00
 draft: false
 tags:
 - weekly
+categories:
+- weekly
 summary: 2022/02/20 ~ 2022/02/26; 只 git add 部份的 file changed/軟體工程師的閱讀書單/kubernetes 的元件簡易介紹/Reverse emoji in python is not what u think
 ---
 

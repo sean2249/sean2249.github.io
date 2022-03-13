@@ -4,6 +4,8 @@ date: 2022-02-22T15:12:07+08:00
 draft: false
 tags:
 - weekly
+categories:
+- weekly
 summary: 2022/01/30 ~ 2022/02/12。 街口 api 的測試 / github 開源專案參與
 ---
 

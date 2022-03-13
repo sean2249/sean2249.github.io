@@ -2,8 +2,15 @@
 title: "Weekly_05"
 date: 2022-03-11T10:20:09+08:00
 draft: false
-tags:
+categories:
 - weekly
+tags:
+- fronted
+- system structure
+- python
+- message queue
+- network
+- design pattern
 summary: 2022/02/27 ~ 2022/03/05; 前端的頁面展現的過程 ; 訂單未成立後的 message queue ; DNS 是什麼
 ---
 
