@@ -1,11 +1,27 @@
 ---
-title: "Weekly_04"
+title: "weekly 04"
 date: 2022-03-02T19:24:34+08:00
 draft: false
-tags:
-- weekly
 categories:
 - weekly
+tags:
+- git
+- python
+- fastapi
+- software 
+- pytest
+- testing
+- python class
+- kubernetes
+- python string
+- encoding
+- mock
+- postgresql
+- cgroups
+- middleware
+- design pattern
+- system structure
+
 summary: 2022/02/20 ~ 2022/02/26; 只 git add 部份的 file changed/軟體工程師的閱讀書單/kubernetes 的元件簡易介紹/Reverse emoji in python is not what u think
 ---
 
@@ -20,26 +36,26 @@ summary: 2022/02/20 ~ 2022/02/26; 只 git add 部份的 file changed/軟體工�
       - [3. 使用 f-string](#3-使用-f-string)
       - [4. 使用 Template (極少見)](#4-使用-template-極少見)
     - [[FastAPI] 官方提供的 fastapi 專案架構](#fastapi-官方提供的-fastapi-專案架構)
-    - [[Software] Software Engineer roadmap via books](#software-software-engineer-roadmap-via-books)
+    - [[software] Software Engineer roadmap via books](#software-software-engineer-roadmap-via-books)
       - [1. 心法](#1-心法)
       - [2. 基礎](#2-基礎)
       - [3. 進階](#3-進階)
       - [4. 反覆閱讀](#4-反覆閱讀)
     - [[Pytest] Useful pytest command line options](#pytest-useful-pytest-command-line-options)
-    - [[python-class] Provide Multiple Constructors in Your Python Classes](#python-class-provide-multiple-constructors-in-your-python-classes)
-    - [[Kubernetes] A guide to Kubernetes architecture](#kubernetes-a-guide-to-kubernetes-architecture)
-    - [[Python-string-encode] Why Can’t You Reverse a String With a Flag Emoji?](#python-string-encode-why-cant-you-reverse-a-string-with-a-flag-emoji)
+    - [[python class] Provide Multiple Constructors in Your Python Classes](#python-class-provide-multiple-constructors-in-your-python-classes)
+    - [[kubernetes] A guide to Kubernetes architecture](#kubernetes-a-guide-to-kubernetes-architecture)
+    - [[python string,encoding] Why Can’t You Reverse a String With a Flag Emoji?](#python-stringencoding-why-cant-you-reverse-a-string-with-a-flag-emoji)
   - [Others](#others)
     - [[python] What does '# noqa' mean in Python comments](#python-what-does--noqa-mean-in-python-comments)
-    - [[mock] Mocking a class used in a with statement](#mock-mocking-a-class-used-in-a-with-statement)
-    - [[python] psycopg2 where in statement parameters](#python-psycopg2-where-in-statement-parameters)
-    - [[kubernetes] 第一千零一篇的 cgroups 介紹](#kubernetes-第一千零一篇的-cgroups-介紹)
-    - [[FastAPI] events: startup - shutdown](#fastapi-events-startup---shutdown)
-    - [[FastAPI] Request body + path + query parameters](#fastapi-request-body--path--query-parameters)
+    - [[mock,testing] Mocking a class used in a with statement](#mocktesting-mocking-a-class-used-in-a-with-statement)
+    - [[python,postgresql] psycopg2 where in statement parameters](#pythonpostgresql-psycopg2-where-in-statement-parameters)
+    - [[kubernetes,cgroups] 第一千零一篇的 cgroups 介紹](#kubernetescgroups-第一千零一篇的-cgroups-介紹)
+    - [[FastAPI,backend] events: startup - shutdown](#fastapibackend-events-startup---shutdown)
+    - [[FastAPI,backend,python] Request body + path + query parameters](#fastapibackendpython-request-body--path--query-parameters)
     - [[FastAPI] `Body` with multiple `examples`](#fastapi-body-with-multiple-examples)
-    - [[FastAPI] middleware](#fastapi-middleware)
-    - [[DesignPattern] Wiki 上面的 design pattern](#designpattern-wiki-上面的-design-pattern)
-    - [[SystemStructure] UML](#systemstructure-uml)
+    - [[FastAPI,middleware] middleware](#fastapimiddleware-middleware)
+    - [[design pattern] Wiki 上面的 design pattern](#design-pattern-wiki-上面的-design-pattern)
+    - [[system structure] UML](#system-structure-uml)
     - [[psycopg2] Sqlstate exception classes](#psycopg2-sqlstate-exception-classes)
 - [Notes](#notes)
   - [Regular expression 取出](#regular-expression-取出)
@@ -109,7 +125,7 @@ https://github.com/tiangolo/full-stack-fastapi-postgresql
 包含了前端 Vue，後端 Fastapi，Database Postgres
 
 
-### [Software] Software Engineer roadmap via books
+### [software] Software Engineer roadmap via books
 https://medium.com/@iamjwr/software-engineer-roadmap-via-books-a6aabdc2589c
 
 #### 1. 心法
@@ -200,7 +216,7 @@ if not sys.platform.startswith("win"):
     pytest.skip("skipping windows-only tests", allow_module_level=True)
 ```
 
-### [python-class] Provide Multiple Constructors in Your Python Classes
+### [python class] Provide Multiple Constructors in Your Python Classes
 https://realpython.com/python-multiple-constructors/
 
 - `__new__` object creation
@@ -312,14 +328,14 @@ Conclusion from website
 - Write multiple constructors using the built-in @classmethod decorator
 - Overload your class constructors using the @singledispatchmethod decorator
 
-### [Kubernetes] A guide to Kubernetes architecture
+### [kubernetes] A guide to Kubernetes architecture
 https://opensource.com/article/22/2/kubernetes-architecture?utm_medium=Email&utm_campaign=weekly&sc_cid=7013a000002qKBKAA2
 
 介紹 kubernetes 元件的架構，從中可以理解其核心，散落的 node，及如何優化調較對的方向
 
 如果我一開始能看到這篇就省了很多路了，不過也有可能走了那些路，我才看得懂這篇 ヽ(✿ﾟ▽ﾟ)ノ
 
-### [Python-string-encode] Why Can’t You Reverse a String With a Flag Emoji?
+### [python string,encoding] Why Can’t You Reverse a String With a Flag Emoji?
 https://davidamos.dev/why-cant-you-reverse-a-flag-emoji/
 
 從 "🇺🇸"[::-1] 的結果，反推到 unicode 在 python 的實作
@@ -367,7 +383,7 @@ noqa = NO-QA -> no quality assurance
 
 linter 不會檢查這行 code 喔~ 像是 flake8
 
-### [mock] Mocking a class used in a with statement
+### [mock,testing] Mocking a class used in a with statement
 https://stackoverflow.com/questions/54634817/mocking-a-class-used-in-a-with-statement
 
 ```python=
@@ -387,7 +403,7 @@ mock_cursor.rowcount = 1
 mock_cursor.fetchone = ('a',)
 ```
 
-### [python] psycopg2 where in statement parameters
+### [python,postgresql] psycopg2 where in statement parameters
 https://stackoverflow.com/questions/28117576/python-psycopg2-where-in-statement
 
 ```python=
@@ -400,7 +416,7 @@ cur.execute(sql, (data,))
 1. 使用 tuple 來傳遞 parameters
 2. 使用 `in %s` 不能用括號 `in (%s)` ，系統會以為 `(('UK', 'France'),)`
 
-### [kubernetes] 第一千零一篇的 cgroups 介紹
+### [kubernetes,cgroups] 第一千零一篇的 cgroups 介紹
 https://medium.com/starbugs/%E7%AC%AC%E4%B8%80%E5%8D%83%E9%9B%B6%E4%B8%80%E7%AF%87%E7%9A%84-cgroups-%E4%BB%8B%E7%B4%B9-a1c5005be88c
 
 對這個沒有很熟，但稍微強迫自己吸收點 (但下面就看不太懂了 ٩(ŏ﹏ŏ、)۶
@@ -411,7 +427,7 @@ https://medium.com/starbugs/%E7%AC%AC%E4%B8%80%E5%8D%83%E9%9B%B6%E4%B8%80%E7%AF%
 - 請使用 systemd unit 來管理 cgroup，身為 linux distribution 預設的系統管理服務，也是大家熟悉習慣的，請使用它! 
 
 
-### [FastAPI] events: startup - shutdown
+### [FastAPI,backend] events: startup - shutdown
 https://fastapi.tiangolo.com/advanced/events/
 
 ```python=
@@ -430,7 +446,7 @@ def shutdown_event():
 在 application 被關閉後，可以做點像是清理 cache 或寫入紀錄。  
 上面的例子，是將關閉資訊寫入檔案，利用 `open()` 不支援 async/await，所有是使用 `def` 而不是 `async def`
 
-### [FastAPI] Request body + path + query parameters
+### [FastAPI,backend,python] Request body + path + query parameters
 https://fastapi.tiangolo.com/tutorial/body/#request-body-path-query-parameters
 
 ```python=
@@ -577,7 +593,7 @@ async def update_item(
     return results
 ```
 
-### [FastAPI] middleware
+### [FastAPI,middleware] middleware
 https://fastapi.tiangolo.com/tutorial/middleware/
 
 你可以客製自己的 middleware 
@@ -601,12 +617,12 @@ async def add_process_time_header(request: Request, call_next):
 ```
 
 
-### [DesignPattern] Wiki 上面的 design pattern
+### [design pattern] Wiki 上面的 design pattern
 https://en.wikipedia.org/wiki/Software_design_pattern#Classification_and_list
 
 發現 wiki 上面的還蠻完整的椰
 
-### [SystemStructure] UML
+### [system structure] UML
 https://zh.wikipedia.org/wiki/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80
 
 描述軟體專案架構
