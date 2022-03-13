@@ -1,19 +1,24 @@
 ---
-title: "Weekly_03"
+title: "leekly 03"
 date: 2022-02-22T15:15:04+08:00
 draft: false
 tags:
 - weekly
 categories:
-- weekly
+- pytest
+- testing
+- python 
+- frontend
+- javascript
+- design pattern
 summary: 2022/02/13 ~ 2022/02/19
 ---
 - [Link](#link)
   - [Good](#good)
   - [Others](#others)
-    - [Python's all(): Check Your Iterables for Truthiness](#pythons-all-check-your-iterables-for-truthiness)
-    - [你知道的 JavaScript 知識都有可能是錯的](#你知道的-javascript-知識都有可能是錯的)
-    - [前端的设计模式系列-责任链模式](#前端的设计模式系列-责任链模式)
+    - [[pytest,testing,python] Python's all(): Check Your Iterables for Truthiness](#pytesttestingpython-pythons-all-check-your-iterables-for-truthiness)
+    - [[frontend,javascript] 你知道的 JavaScript 知識都有可能是錯的](#frontendjavascript-你知道的-javascript-知識都有可能是錯的)
+    - [[design pattern,frontend] 前端的设计模式系列-责任链模式](#design-patternfrontend-前端的设计模式系列-责任链模式)
 - [Notes](#notes)
   - [Pytest with statement](#pytest-with-statement)
   - [Memory Leak](#memory-leak)
@@ -28,7 +33,7 @@ summary: 2022/02/13 ~ 2022/02/19
 ## Good
 
 ## Others
-### Python's all(): Check Your Iterables for Truthiness
+### [pytest,testing,python] Python's all(): Check Your Iterables for Truthiness
 https://realpython.com/python-all/
 
 [Why does all() return True if the iterable is empty?]( https://blog.carlmjohnson.net/post/2020/python-square-of-opposition/)
@@ -117,14 +122,14 @@ Is 43 valid? False
 Is 42 valid? True
 ```
 
-### 你知道的 JavaScript 知識都有可能是錯的
+### [frontend,javascript] 你知道的 JavaScript 知識都有可能是錯的
 > From StarBugs weekly #119
 https://blog.huli.tw/2022/01/30/how-to-validate-javascript-knowledge/?fbclid=IwAR17M-W6YRBGF01YI0DaFNmY1_mYRIJQxcKcXBagl5U3R9T6khmTHlngCSg
 
 在 javascript 上的雷要如何去排除，要如何獲得較正確的知識，這篇介紹了 ECMAScript 的 script，通過他可理清先前認知上其實是錯誤的知識
 
 
-### 前端的设计模式系列-责任链模式
+### [design pattern,frontend] 前端的设计模式系列-责任链模式
 https://juejin.cn/post/7060851296491798535
 
 **責任鏈**
@@ -206,5 +211,5 @@ fastapi could be
 
 # Waiting read link
 https://www.bogotobogo.com/Linux/linux_process_and_signals.php
- https://zh.wikipedia.org/wiki/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80
+https://zh.wikipedia.org/wiki/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80
 
