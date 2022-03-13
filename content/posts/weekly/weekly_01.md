@@ -1,5 +1,5 @@
 ---
-title: "weekly-01"
+title: "weekly 01"
 date: 2022-02-05T15:34:29+08:00
 draft: false
 summary: 2022/01/24 ~ 2022/01/30
