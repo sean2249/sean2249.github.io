@@ -1,5 +1,5 @@
 ---
-title: {{ article.title }}
+title: "{{ article.title }}"
 date: {{ cur_time }}
 draft: false
 categories:
@@ -7,7 +7,7 @@ categories:
 tags:
 {% for tag in article.tags -%}
 - {{ tag }}
-{%- endfor %}
+{% endfor -%}
 summary: "tags: {{ article.tags|join(', ') }}"
 ---
 {{ article.content }}
