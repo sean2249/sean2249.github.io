@@ -5,12 +5,6 @@ draft: false
 categories:
 - weekly
 tags:
-- sre
-- life
-- python
-- docstring
-- kubernetes
-
 summary: weekly 2022/03/13-2022/03/19
 ---
 
@@ -21,8 +15,6 @@ summary: weekly 2022/03/13-2022/03/19
     - [[python,docstring] Python docstring reStructuredText style](#pythondocstring-python-docstring-restructuredtext-style)
   - [Others](#others)
     - [[kubernetes] [Day 19] 在 Kubernetes 中實現負載平衡 - Ingress Controller](#kubernetes-day-19-在-kubernetes-中實現負載平衡---ingress-controller)
-- [Notes](#notes)
-- [Waiting to read](#waiting-to-read)
 
 # Link
 ## Liked
@@ -70,12 +62,3 @@ https://gist.github.com/jesugmz/d83b5e9de7ccc16f71c02adf7d2f3f44
 https://ithelp.ithome.com.tw/articles/10196261
 
 Ingress 的介紹
-
-# Notes
-
-# Waiting to read
-https://sre.google/sre-book/table-of-contents/
-https://juejin.cn/post/6994066112203718686
-https://juejin.cn/post/6994629873985650696
-https://juejin.cn/post/6994274756652433421
-https://juejin.cn/post/7074055897349095454

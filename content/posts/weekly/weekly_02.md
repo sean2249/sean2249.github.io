@@ -5,22 +5,6 @@ draft: false
 categories:
 - weekly
 tags:
-- system design
-- testing
-- python
-- developer enviroment  
-- network
-- backend
-- frontend
-- open source
-- kubernetes
-- docker
-- openshift
-- python module
-- linux
-- shell
-- sre
-- podman
 summary: 2022/01/30 ~ 2022/02/12。 街口 api 的測試 / github 開源專案參與
 ---
 
@@ -55,18 +39,6 @@ summary: 2022/01/30 ~ 2022/02/12。 街口 api 的測試 / github 開源專案�
     - [[open source] How to Contribute to Open Source Projects – A Beginner's Guide](#open-source-how-to-contribute-to-open-source-projects--a-beginners-guide)
     - [[docker,podman] Podman 淺談 - 為何你應該選擇 Podman 而不是 Docker？](#dockerpodman-podman-淺談---為何你應該選擇-podman-而不是-docker)
     - [[python] 'is' vs '=='](#python-is-vs-)
-- [Notes](#notes)
-  - [Postgres](#postgres)
-  - [HyperText Transfer Protocol (HTTP)](#hypertext-transfer-protocol-http)
-    - [abstract](#abstract)
-    - [Content](#content)
-      - [Uniform Resources Identifiers, URI](#uniform-resources-identifiers-uri)
-      - [Package](#package)
-      - [HTTP Message](#http-message)
-      - [Header](#header)
-      - [HTTP status code](#http-status-code)
-      - [HTTP/2 WIN, WIN](#http2-win-win)
-  - [EFK log 的時間](#efk-log-的時間)
 
 # Website
 ## Good 
@@ -420,79 +392,3 @@ False
 #   referred to by the variables are equal
 ```
 
-
-# Notes
-## Postgres
-- connection Thread-safe / cursor not thread-safe
-- Remember to close connection ? should i keep connection?
-- passing parameters to sql queries to prevent potential sql injection
-- fetch
-    - fetchall: get all data in single operation, might have crush issue when temperaory memory isnt enough
-    - fetchmany: substitute method to use when using fetchall
-    - fetchone:
-    
-## HyperText Transfer Protocol (HTTP)
-
-### abstract
-- 1.1 
-    - TCP connection, keep-lived
-    - header
-- 2
-    - 原本只能一個一個傳，但可支援多個
-- 3
-    - UDP as transition layer
-### Content
-- on application-layer protocol
-- TCP/IP
-
-#### Uniform Resources Identifiers, URI
-
-URI- 更著重在定位資源的資訊
-
-> ldap://dfadf.asdfa
-> mailto:s@ex.com
-> tel:+1-816-555-1212
-
-#### Package 
-- HTTP infromation at HTTP/1 is readable, but would be encapluse in frame at HTTP/2
-
-#### HTTP Message
-```
-HTTP-message = start-line
-               *( header-field CRLF )
-               CRLF
-               [ message-body ]
-```
-> carriage return followed by line feed, CRLF
-- must have start line ex. `POST /?id=1 HTTP/1.1`
-- Header: zero or one+ header field + CRLF
-- CRLF- MUST include in message even thought there is no message body.
-- Message-body: optional
-
-#### Header
-- content-encoding: content compression
-**Request Header**
-- Host(MUST): 'cause one ip could be bind to many domain(virtual server)
-- User-agent
-- Cookie: for state
-- Authorization: identification on http connect
-- Referer: catch previous url, mainly on commercial (不可靠，可被竄改，只會看前一個網頁的 URL)
-**Response Header**
-
-#### HTTP status code
-- 301/302
-    - 301 Moved Permanently
-    - 302 Found（Moved Temporarily）
-    - 301 會記住，直接過去。302 則每次都會發送
-#### HTTP/2 WIN, WIN
-- Header compression HPACK algorithm
-- 可以將多個訊息合併成 frame
-- Server push. When request incoming, server would pack all the related package
-- 主要用在 chat，因為需要即時 refresh?
-
-## EFK log 的時間
-- 不能用 timestamp，會被當成 number data type
-- 沒有 refresh index 時，`datetime.now()` 在 kibana 上面看到的會是正確的地區時間
-- 沒有 refresh index 時，`datetime.utcnow()` 在 kibana 上面看到的會是正確的地區時間
-    
-    

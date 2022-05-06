@@ -5,12 +5,6 @@ draft: false
 categories:
 - weekly
 tags:
-- fronted
-- system structure
-- python
-- message queue
-- network
-- design pattern
 summary: 2022/02/27 ~ 2022/03/05; 前端的頁面展現的過程 ; 訂單未成立後的 message queue ; DNS 是什麼
 ---
 
@@ -25,8 +19,6 @@ summary: 2022/02/27 ~ 2022/03/05; 前端的頁面展現的過程 ; 訂單未成�
     - [[Python] Understanding Attributes, Dicts and Slots in Python](#python-understanding-attributes-dicts-and-slots-in-python)
     - [[Network] 字节面试被虐后，是时候搞懂 DNS 了](#network-字节面试被虐后是时候搞懂-dns-了)
     - [[Design Pattern] Decorator 裝飾者模式](#design-pattern-decorator-裝飾者模式)
-- [Notes](#notes)
-- [Waiting Links](#waiting-links)
 
 # Link
 ## Liked
@@ -127,8 +119,3 @@ dns 的遞迴查詢與迭代查詢
 https://ithelp.ithome.com.tw/articles/10218692
 
 Decorator / Chain of Responsibility / Strategy / Composite 如何區分
-
-# Notes
-
-# Waiting Links
-https://juejin.cn/post/6935232082482298911

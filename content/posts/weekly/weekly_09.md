@@ -5,12 +5,6 @@ draft: false
 categories:
 - weekly
 tags:
-- dev environment
-- software engineer
-- interview
-- python 
-- json
-- go
 summary: "2022/03/27~2022/04/02"
 ---
 

@@ -5,27 +5,6 @@ draft: false
 categories:
 - weekly
 tags:
-- grpc
-- kubernetes
-- incident
-- sre
-- security
-- development
-- scrum
-- code review
-- devops
-- system structure
-- microservices
-- software
-- design pattern
-- microservices
-- kubernetes-toy
-- dev enviroment
-- docker
-- testing
-- ci
-- kubernetes toy
-
 summary: 2022/03/06 - 2022/03/12
 ---
 
@@ -55,8 +34,6 @@ summary: 2022/03/06 - 2022/03/12
     - [[kubernetes,docker] [Day2] 淺談 Container 實現原理, 以 Docker 為例(I)](#kubernetesdocker-day2-淺談-container-實現原理-以-docker-為例i)
     - [[devops,ci,testing] 第一次洗程式到 CI 驗證](#devopscitesting-第一次洗程式到-ci-驗證)
     - [[software] Continuous Learning Tips for Software Engineers](#software-continuous-learning-tips-for-software-engineers)
-- [Notes](#notes)
-- [Waiting read](#waiting-read)
 
 # Link
 ## Liked
@@ -347,8 +324,3 @@ https://ithelp.ithome.com.tw/articles/10184841
 https://medium.com/@aleydis/continuous-learning-tips-for-software-engineers-4d15f42681aa
 
 Dont stop learning!! Even though u are not a software engineer
-
-# Notes
-
-# Waiting read
-https://juejin.cn/post/7072392430103822349

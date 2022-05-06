@@ -4,11 +4,6 @@ date: 2022-04-03T14:31:10+08:00
 draft: false
 categories:
 - weekly
-tags:
-- kubernetes
-- docker
-- rancker
-- efk
 summary: "2022/03/20-2022/03/26"
 ---
 
@@ -20,10 +15,7 @@ summary: "2022/03/20-2022/03/26"
   - [Others](#others)
     - [[kubernetes,rancher] [Rancher 系列文] - 介紹 Rancher](#kubernetesrancher-rancher-系列文---介紹-rancher)
     - [[kubernetes,efk] Deploy efk stack with helm3 in kubernetes](#kubernetesefk-deploy-efk-stack-with-helm3-in-kubernetes)
-- [Notes](#notes)
-- [Waiting to read](#waiting-to-read)
-- [Meeting](#meeting)
-  - [[Talk] 高併發](#talk-高併發)
+    - [[System structure] Talk-高併發](#system-structure-talk-高併發)
 
 # Link
 ## Liked
@@ -68,13 +60,7 @@ https://kamrul.dev/deploy-efk-stack-with-helm-3-in-kubernetes/
 
 what is metalLB? is it required for setting?
 
-# Notes
-
-# Waiting to read
-
-# Meeting 
-
-## [Talk] 高併發
+### [System structure] Talk-高併發
 
 > 用 淘寶的雙 11 做範例
 

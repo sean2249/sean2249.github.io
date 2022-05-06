@@ -5,23 +5,6 @@ draft: false
 categories:
 - weekly
 tags:
-- git
-- python
-- fastapi
-- software 
-- pytest
-- testing
-- python class
-- kubernetes
-- python string
-- encoding
-- mock
-- postgresql
-- cgroups
-- middleware
-- design pattern
-- system structure
-
 summary: 2022/02/20 ~ 2022/02/26; 只 git add 部份的 file changed/軟體工程師的閱讀書單/kubernetes 的元件簡易介紹/Reverse emoji in python is not what u think
 ---
 
@@ -57,14 +40,13 @@ summary: 2022/02/20 ~ 2022/02/26; 只 git add 部份的 file changed/軟體工�
     - [[design pattern] Wiki 上面的 design pattern](#design-pattern-wiki-上面的-design-pattern)
     - [[system structure] UML](#system-structure-uml)
     - [[psycopg2] Sqlstate exception classes](#psycopg2-sqlstate-exception-classes)
-- [Notes](#notes)
-  - [Regular expression 取出](#regular-expression-取出)
-  - [[Mock] setting return values and attributes](#mock-setting-return-values-and-attributes)
-    - [set function return value](#set-function-return-value)
-    - [Set module return value](#set-module-return-value)
-    - [set attribute value](#set-attribute-value)
-    - [use class instance](#use-class-instance)
-  - [[FastAPI] Additional responses in OpenAPI](#fastapi-additional-responses-in-openapi)
+    - [[re] Regular expression 取出](#re-regular-expression-取出)
+    - [[Mock] setting return values and attributes](#mock-setting-return-values-and-attributes)
+      - [set function return value](#set-function-return-value)
+      - [Set module return value](#set-module-return-value)
+      - [set attribute value](#set-attribute-value)
+      - [use class instance](#use-class-instance)
+    - [[FastAPI] Additional responses in OpenAPI](#fastapi-additional-responses-in-openapi)
 
 # Link
 ## Good
@@ -634,10 +616,7 @@ https://zh.wikipedia.org/wiki/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A
 ### [psycopg2] Sqlstate exception classes
 https://www.psycopg.org/docs/errors.html#sqlstate-exception-classes
 
-# Notes
-
-
-## Regular expression 取出
+### [re] Regular expression 取出
 
 ```python=
 import re
@@ -651,8 +630,8 @@ else:
 ```
 
 
-## [Mock] setting return values and attributes
-### set function return value
+### [Mock] setting return values and attributes
+#### set function return value
 ```python=
 >>> mock = Mock()
 >>>mock.return_value = 5
@@ -660,7 +639,7 @@ else:
 5
 ```
 
-### Set module return value
+#### Set module return value
 ```python=
 >>> mock = Mock()
 >>> mock.method.return_value = 5
@@ -668,7 +647,7 @@ else:
 5
 ```
 
-### set attribute value
+#### set attribute value
 ```python=
 >>> mock = Mock()
 >>> mock.x = 5
@@ -676,7 +655,7 @@ else:
 5
 ```
 
-### use class instance
+#### use class instance
 
 1. 實體化
 ```python=
@@ -704,7 +683,7 @@ cursor = connect.cursor()
 3
 ```
 
-## [FastAPI] Additional responses in OpenAPI 
+### [FastAPI] Additional responses in OpenAPI 
 https://fastapi.tiangolo.com/advanced/additional-responses/
 
 ```python=

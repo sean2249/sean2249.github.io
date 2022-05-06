@@ -5,12 +5,6 @@ draft: false
 categories:
 - weekly
 tags:
-- pytest
-- testing
-- python 
-- frontend
-- javascript
-- design pattern
 summary: 2022/02/13 ~ 2022/02/19
 ---
 - [Link](#link)
@@ -19,15 +13,6 @@ summary: 2022/02/13 ~ 2022/02/19
     - [[pytest,testing,python] Python's all(): Check Your Iterables for Truthiness](#pytesttestingpython-pythons-all-check-your-iterables-for-truthiness)
     - [[frontend,javascript] 你知道的 JavaScript 知識都有可能是錯的](#frontendjavascript-你知道的-javascript-知識都有可能是錯的)
     - [[design pattern,frontend] 前端的设计模式系列-责任链模式](#design-patternfrontend-前端的设计模式系列-责任链模式)
-- [Notes](#notes)
-  - [Pytest with statement](#pytest-with-statement)
-  - [Memory Leak](#memory-leak)
-    - [Good tool](#good-tool)
-    - [How to examine](#how-to-examine)
-    - [Flask vs Fastapi](#flask-vs-fastapi)
-    - [Cgroup](#cgroup)
-    - [Capture signal](#capture-signal)
-- [Waiting read link](#waiting-read-link)
 
 # Link
 ## Good
@@ -163,53 +148,3 @@ if __name__ == '__main__':
     
     a.setNext(b)
 ```
-# Notes
-## Pytest with statement
-https://stackoverflow.com/questions/54634817/mocking-a-class-used-in-a-with-statement
-
-```python=
-with temp.func() as f:
-    f.method()
-```
-
-```python=
-moc = Mock()
-mock_temp = moc.func.return_value.__enter__.return_value
-mock_temp.method.return_value = 'HELLO'
-```
-
-## Memory Leak
-- Bad usage: cyclic reference, global 
-- Not good on `traceback` sys.exc_info
-- Overwirte `__del__` might have problem on GC
-
-### Good tool
-- `tracemalloc` to snapshot
-
-### How to examine
-- GC have unreachable/uncollectable problem -> 'cause have bad code structure
-- Process monitor required to mointor information on log
-    - `process.memory_info().rss/1024 ** 2`
-- OCP console web UI?
-
-user is not familiar with deployment tool, eg. k8s/gunicorn/process/memory, what could DE promote this to DA team?
-
-### Flask vs Fastapi
-- FastAPI take lots of memory?
-
-
-### Cgroup
-
-### Capture signal
-- Output log if SIGTERM? 
-- but what happended if graceful shutdown timeout
-- sigkill
-
-gunicorn has sigterm
-fastapi could be
-
-
-# Waiting read link
-https://www.bogotobogo.com/Linux/linux_process_and_signals.php
-https://zh.wikipedia.org/wiki/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80
-

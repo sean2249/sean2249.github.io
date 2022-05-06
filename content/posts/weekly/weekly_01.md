@@ -6,14 +6,6 @@ summary: 2022/01/24 ~ 2022/01/30
 categories:
 - weekly
 tags:
-- python
-- sre
-- system structure 
-- development
-- python module
-- docker
-- moby
-- web3
 ---
 
 - [website reading](#website-reading)
