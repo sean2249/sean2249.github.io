@@ -6,8 +6,8 @@ categories:
 - linkPage
 tags:
 - sre
-- devops] [好文翻譯
-summary: "tags: sre, devops] [好文翻譯"
+- devops
+summary: "tags: sre, devops"
 ---
 
 https://medium.com/kkstream/%E5%A5%BD%E6%96%87%E7%BF%BB%E8%AD%AF-%E4%BD%A0%E5%9C%A8%E6%89%BE%E7%9A%84%E6%98%AF-sre-%E9%82%84%E6%98%AF-devops-2ded43c2852

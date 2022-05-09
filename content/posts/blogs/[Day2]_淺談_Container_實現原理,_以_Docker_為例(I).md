@@ -6,8 +6,8 @@ categories:
 - linkPage
 tags:
 - kubernetes
-- docker] [Day2
-summary: "tags: kubernetes, docker] [Day2"
+- docker
+summary: "tags: kubernetes, docker"
 ---
 
 https://ithelp.ithome.com.tw/articles/10216215

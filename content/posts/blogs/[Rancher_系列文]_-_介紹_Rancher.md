@@ -6,8 +6,8 @@ categories:
 - linkPage
 tags:
 - kubernetes
-- rancher] [Rancher 系列文
-summary: "tags: kubernetes, rancher] [Rancher 系列文"
+- rancher
+summary: "tags: kubernetes, rancher"
 ---
 
 https://www.hwchiu.com/rancher-2.html

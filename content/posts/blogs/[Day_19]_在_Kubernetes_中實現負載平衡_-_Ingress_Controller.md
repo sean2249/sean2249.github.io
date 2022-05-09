@@ -5,8 +5,8 @@ draft: false
 categories:
 - linkPage
 tags:
-- kubernetes] [Day 19
-summary: "tags: kubernetes] [Day 19"
+- kubernetes
+summary: "tags: kubernetes"
 ---
 
 https://ithelp.ithome.com.tw/articles/10196261
