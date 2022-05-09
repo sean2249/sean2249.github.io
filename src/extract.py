@@ -35,21 +35,25 @@ def extract_block(lines: List[str], start_idx: int, next_start_idx: int) -> Arti
 
 
 def extract_weekly_page(filename: str) -> list:
+    '''
+    2022/05/08 Changed article layer (h2->h1(Good/other), h3-h2(title))
+               Remove Link
+    '''
     with open(filename, "r") as fp:
         lines = fp.readlines()
 
+    h1_indexs = search_prefix_in_lines(lines, "# ")
     h2_indexs = search_prefix_in_lines(lines, "## ")
-    h3_indexs = search_prefix_in_lines(lines, "### ")
 
-    if len(h2_indexs) != 2:
-        msg = f"h2 tag must have Good/Other two elements only\nFound {len(h2_indexs)} in {filename}"
+    if len(h1_indexs) != 2:
+        msg = f"h2 tag must have Good/Other two elements only\nFound {len(h1_indexs)} in {filename}"
         raise ValueError(msg)
 
     blocks = [
         extract_block(lines, start_idx, next_start_idx - 1)
-        for start_idx, next_start_idx in zip(h3_indexs[:-1], h3_indexs[1:])
+        for start_idx, next_start_idx in zip(h2_indexs[:-1], h2_indexs[1:])
     ]
-    blocks.append(extract_block(lines, h3_indexs[-1], len(lines) - 1))
+    blocks.append(extract_block(lines, h2_indexs[-1], len(lines) - 1))
 
     return blocks
 
