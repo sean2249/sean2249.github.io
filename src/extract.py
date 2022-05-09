@@ -27,7 +27,7 @@ def extract_block(lines: List[str], start_idx: int, next_start_idx: int) -> Arti
     if found_tags is None:
         msg = f'Cannot found tags in line{start_idx} with content "{title_line}"'
         raise ValueError(msg)
-    tags = [tag.strip() for tag in found_tags.group(0)[1:-1].split(",")]
+    tags = [tag.strip().lower() for tag in found_tags.group(0)[1:-1].split(",")]
 
     content = "".join(lines[start_idx + 1 : next_start_idx])
 
