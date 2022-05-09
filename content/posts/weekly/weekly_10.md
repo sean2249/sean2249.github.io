@@ -1,5 +1,5 @@
 ---
-title: "Weekly_10"
+title: "Weekly 10"
 date: 2022-05-09T11:32:17+08:00
 draft: false
 categories:
